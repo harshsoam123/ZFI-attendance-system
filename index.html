@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Login | AttendPay</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <div class="logo-mark">AP</div>
+      <h1>AttendPay Admin</h1>
+      <p>Employee Attendance &amp; Payroll Management</p>
+    </div>
+
+    <div id="demo-banner" style="display:none; background: var(--info-bg); color: var(--info); font-size: 12.5px; padding: 10px 12px; border-radius: 8px; margin-bottom: 16px;">
+      Demo mode: Firebase isn't connected yet, so any email &amp; password will log you in with sample local data. Add your keys in <code>js/firebase-config.js</code> to go live.
+    </div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email Address</label>
+        <div class="input-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.8" fill="none"/><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+          <input class="form-control" type="email" id="login-email" placeholder="admin@company.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <div class="input-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.8"/></svg>
+          <input class="form-control" type="password" id="login-password" placeholder="••••••••" required />
+          <button type="button" class="password-toggle" id="toggle-password">Show</button>
+        </div>
+      </div>
+      <div class="flex-between mb-16">
+        <label style="font-size:13px; display:flex; align-items:center; gap:6px;"><input type="checkbox" /> Remember me</label>
+        <a class="link-primary" href="forgot-password.html">Forgot password?</a>
+      </div>
+      <div class="error-text" id="login-error"></div>
+      <button class="btn btn-primary btn-block" type="submit">Login to Dashboard</button>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
