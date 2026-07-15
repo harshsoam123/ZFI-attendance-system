@@ -60,7 +60,7 @@ function injectShell(activeKey, pageTitle, user) {
   shell.innerHTML = `
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-brand">
-        <div class="logo-mark">AP</div>
+        <div class="logo-mark">ZFI</div>
         <span>AttendPay</span>
       </div>
       <nav class="sidebar-nav">${navLinks}</nav>
